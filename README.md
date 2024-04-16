@@ -2,7 +2,7 @@
 
 | Isolation Level    | Dirty Read | Nonrepeatable Read | Phantom Read | Serialization Anomaly | Lost Update |
 |---------------------|------------|---------------------|--------------|------------------------|-------------|
-| Read uncommitted    | YES        | YES                 | YES          | YES                    | YES         |
+| Read uncommitted    | NO         | YES                 | YES          | YES                    | YES         |
 | Read committed      | NO         | YES                 | YES          | YES                    | YES         |
 | Repeatable read     | NO         | NO                  | NO*          | YES*                   | NO          |
 | Serializable        | NO         | NO                  | NO           | NO                     | NO          |
